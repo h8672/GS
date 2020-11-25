@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GS.RPG.Quest
+namespace GS.Quest
 {
-    [RequireComponent(typeof(GS.RPG.Quest.QuestGiver), typeof(GS.RPG.Quest.QuestGiver))]
+    [RequireComponent(typeof(QuestGiver))]
     public class QuestIndicator : MonoBehaviour
     {
         [SerializeField] private GameObject startQuestPrefab = null;
@@ -24,7 +24,7 @@ namespace GS.RPG.Quest
                 Debug.LogWarning("Missing indicator, load a preset if the same assets are used everytime.", this);
                 this.enabled = false;
             }
-            giver = GetComponent<GS.RPG.Quest.QuestGiver>();
+            giver = GetComponent<QuestGiver>();
         }
 
         float cooldown = 0f;
@@ -33,11 +33,11 @@ namespace GS.RPG.Quest
             if(cooldown < Time.time)
             {
                 cooldown += 60f;
-                if (giver.indicator.Equals(GS.RPG.Quest.QuestGiverIndicator.EndQuest))
+                if (giver.indicator.Equals(QuestGiverIndicator.EndQuest))
                 {
                     Show(true);
                 }
-                if (giver.indicator.Equals(GS.RPG.Quest.QuestGiverIndicator.StartQuest))
+                if (giver.indicator.Equals(QuestGiverIndicator.StartQuest))
                 {
                     Show(false);
                 }

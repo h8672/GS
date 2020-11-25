@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace GS.RPG.Quest
+namespace GS.Quest
 {
-    [CreateAssetMenu(fileName = "New QuestData", menuName = "GS/RPG/Quest/QuestData")]
+    [CreateAssetMenu(fileName = "New QuestData", menuName = "GS/Quest/QuestData")]
     [System.Serializable]
     public class QuestData : ScriptableObject
     {

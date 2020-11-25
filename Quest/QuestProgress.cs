@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GS.RPG.Quest
+namespace GS.Quest
 {
     /// <summary>
     /// Quest state.

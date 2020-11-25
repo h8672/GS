@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GS.RPG.Quest
+namespace GS.Quest
 {
     public class QuestList : MonoBehaviour
     {
@@ -95,7 +95,7 @@ namespace GS.RPG.Quest
             return tasks.ToArray();
         }
 
-        public void StartQuestList(GS.RPG.Quest.QuestGiver _giver)
+        public void StartQuestList(QuestGiver _giver)
         {
             //giver = _giver;
             startQuest.onClick.AddListener( () => {
@@ -120,7 +120,7 @@ namespace GS.RPG.Quest
 
             List<QuestRewardType> availableTypes = new List<QuestRewardType>();
             List<QuestRewardType> selectedTypes = new List<QuestRewardType>();
-            List<GS.RPG.Quest.QuestReward> rewards = new List<QuestReward>();
+            List<QuestReward> rewards = new List<QuestReward>();
 
             // Get all rewards for each quest.
             foreach (QuestLink _link in quests)

@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-namespace GS.RPG.Quest
+namespace GS.Quest
 {
-    [CreateAssetMenu(fileName = "New QuestLink", menuName = "GS/RPG/Quest/QuestLink")]
+    [CreateAssetMenu(fileName = "New QuestLink", menuName = "GS/Quest/QuestLink")]
     [System.Serializable]
     public class QuestLink : ScriptableObject
     {

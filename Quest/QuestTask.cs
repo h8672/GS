@@ -1,4 +1,4 @@
-﻿namespace GS.RPG.Quest
+﻿namespace GS.Quest
 {
     /// <summary>
     /// Quest task. You have to design your own version of it.

@@ -1,4 +1,4 @@
-﻿namespace GS.RPG.Quest
+﻿namespace GS.Quest
 {
     /// <summary>
     /// Reward types for QuestReward.
